@@ -8,7 +8,7 @@ Assessment Requirements
 4. For good measure, getTotalSupply() should return the number of NFT's you have created
 */
 
-// Step 1: Create a variable to hold the NFTs. This variable will be an array.
+// Step 1: Created a ARRAY type variable to hold the NFTs.
 let nftStorage = [];
 
 /* 
@@ -16,7 +16,7 @@ Step 2: This function will take in some values as parameters,
 create an NFT object using the parameters passed to it for its metadata, and store it in the variable above.
 */
 function mintNFT(name, date, location, description) {
-  // Now Created an object to hold the metadata of the NFT
+  // Now Created an object inside function to hold the metadata of the NFT
   const nft = {
     name: name,
     date: date,
@@ -28,7 +28,7 @@ function mintNFT(name, date, location, description) {
 }
 
 /*
-Step 3: Your listNFTs() function will print all of your NFTs metadata to the console.
+Step 3:  listNFTs() function will print all of your NFTs metadata to the console.
 */
 function listNFTs() {
   // Loop through each NFT in the collection and print its metadata which are name data location and description
@@ -44,7 +44,7 @@ function listNFTs() {
 }
 
 function getTotalSupply() {
-  // tThis function Return the total number of NFTs in the collection
+  // This function Return the total number of NFTs in the collection
   return nftStorage.length;
 }
 
