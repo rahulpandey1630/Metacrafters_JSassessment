@@ -16,7 +16,7 @@ Step 2: This function will take in some values as parameters,
 create an NFT object using the parameters passed to it for its metadata, and store it in the variable above.
 */
 function mintNFT(name, date, location, description) {
-  // Create an object to hold the metadata of the NFT
+  // Now Created an object to hold the metadata of the NFT
   const nft = {
     name: name,
     date: date,
@@ -31,7 +31,7 @@ function mintNFT(name, date, location, description) {
 Step 3: Your listNFTs() function will print all of your NFTs metadata to the console.
 */
 function listNFTs() {
-  // Loop through each NFT in the collection and print its metadata
+  // Loop through each NFT in the collection and print its metadata which are name data location and description
   for (let i = 0; i < nftStorage.length; i++) {
     const nft = nftStorage[i];
     console.log("ID: " + (i + 1));
@@ -43,23 +43,20 @@ function listNFTs() {
   }
 }
 
-/*
-Step 4: For good measure, getTotalSupply() should return the number of NFT's you have created
-*/
 function getTotalSupply() {
-  // Return the total number of NFTs in the collection
+  // tThis function Return the total number of NFTs in the collection
   return nftStorage.length;
 }
 
-// Call your functions below this line
+// Now calling the function with arguments
 
 // Mint some NFTs for famous landmarks
 mintNFT("Eiffel Tower", "1889-03-31", "Paris, France", "Iconic iron lattice tower in Paris.");
 mintNFT("Taj Mahal", "1632-04-01", "Agra, India", "Marble mausoleum built by Shah Jahan for his wife Mumtaz Mahal.");
 mintNFT("Statue of Liberty", "1886-10-28", "New York City, USA", "Symbol of freedom and democracy in the United States.");
 
-// List all NFTs
+// Call this function to list all NFTs
 listNFTs();
 
-// Print the total supply of NFTs
+// Printing the total supply of NFTs
 console.log("Total Supply: " + getTotalSupply());
